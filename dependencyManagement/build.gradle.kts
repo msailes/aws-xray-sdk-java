@@ -5,8 +5,8 @@ plugins {
 data class DependencySet(val group: String, val version: String, val modules: List<String>)
 
 val DEPENDENCY_BOMS = listOf(
-        "com.fasterxml.jackson:jackson-bom:2.11.0",
-        "org.junit:junit-bom:5.6.2"
+        "com.fasterxml.jackson:jackson-bom:2.12.0",
+        "org.junit:junit-bom:5.8.2"
 )
 
 val DEPENDENCY_SETS = listOf(
@@ -17,7 +17,7 @@ val DEPENDENCY_SETS = listOf(
         ),
         DependencySet(
                 "com.fasterxml.jackson.datatype",
-                "2.11.0",
+                "2.12.0",
                 listOf("jackson-datatype-jsr310")
         ),
         DependencySet(
@@ -42,7 +42,7 @@ val DEPENDENCY_SETS = listOf(
         ),
         DependencySet(
                 "junit",
-                "4.12",
+                "4.13.1",
                 listOf("junit")
         ),
         DependencySet(
